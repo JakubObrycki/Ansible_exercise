@@ -1,0 +1,17 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Create file with content'
+     copy:
+      dest: /home/sample/ansible/blog.txt
+      content: 'This file is created by Ansible!'
+
+
+
+
+
+
+
+

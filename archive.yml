@@ -1,0 +1,9 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Change location'
+     archive:
+      path: '/home/sample/ansible/'
+      dest: '/home/sample/ansible_v2/demo.tar.gz'

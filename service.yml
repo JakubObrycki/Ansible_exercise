@@ -1,0 +1,12 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Install package'
+     apt: name=vsftpd state=present
+
+   - name: 'Start service'
+     service:
+      name: vsftpd
+      state: started

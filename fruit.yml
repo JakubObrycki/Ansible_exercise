@@ -1,0 +1,12 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  vars:
+   fruits:
+    - apple
+    - peach
+    - grapes
+    - orange
+  tasks:
+   - command: 'echo "{{ item }}"'
+     with_items: '{{ fruits }}'

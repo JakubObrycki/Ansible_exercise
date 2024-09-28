@@ -1,0 +1,15 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Create blog file'
+     file:
+      path: /home/sample/ansible/blog.txt
+      state: touch
+
+   - name: 'Create story file'
+     file:
+      path: /home/sample/ansible/story.txt
+      state: touch
+

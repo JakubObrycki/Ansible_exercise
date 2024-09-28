@@ -1,0 +1,10 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Create content file'
+     copy:
+      src: /home/sample/ansible/world.txt
+      dest: /home/sample/ansible_v2
+

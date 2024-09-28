@@ -1,0 +1,10 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Copy content'
+     copy:
+      src: /home/sample/ansible/blog.txt
+      dest: /home/sample/ansible_v2   
+      

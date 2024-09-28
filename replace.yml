@@ -1,0 +1,15 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - name: 'Replace content'
+     replace:
+      dest: /home/sample/ansible/blog.txt
+      regexp: 'Ansible'
+      replace: 'Docker'
+
+   - name: 'Create content file'
+     copy:
+      dest: /home/sample/ansible/story.txt
+      content: 'This is Ansible!'

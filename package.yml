@@ -1,0 +1,9 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  become: true
+  connection: local
+  tasks:
+   - apt:
+      name: vim-enhanced
+      state: present

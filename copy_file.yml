@@ -1,0 +1,9 @@
+---
+- name: 'Playbook'
+  hosts: localhost
+  connection: local
+  tasks:
+   - lineinfile:
+      dest: '/home/sample/ansible/world.txt'
+      line: 'Welcome to our lab!'
+      state: present
